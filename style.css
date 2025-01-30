@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FCE89D;
+}
+
+.popup-container {
+  width: 300px;  /* Increase size of popup */
+  padding: 20px;
+  background-color: #FCE89D;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.popup-title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Time Spent List */
+.time-list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.time-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.time-list li {
+  font-size: 16px;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.time-list li:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+/* Favicon */
+.favicon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Reset Button */
+.reset-btn, .report-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #364f6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover, .report-btn:hover {
+  background-color: #0056b3;
+}
+
+.reset-btn:active, .report-btn:active {
+  background-color: #004085;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+

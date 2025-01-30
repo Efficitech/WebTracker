@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1 class="popup-title">WebTracker</h1>
+    <div id="timeSpent" class="time-list"></div>
+    <button id="resetBtn" class="reset-btn">Reset All</button>
+    <button id="reportBtn" class="report-btn">Productivity Report</button>
+  </div>
+
+  <!-- Modal for Productivity Report -->
+  <div id="reportModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h2>Productivity Report</h2>
+      <canvas id="reportChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+  <script src="chart.min.js"></script>
+
+</body>
+</html>

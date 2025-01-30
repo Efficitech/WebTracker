@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Automated Time Log",
+  "version": "1.0",
+  "description": "Track the time you spend on websites automatically.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+		"default_icon": "Logo.png"
+  	},
+  	"icons": {
+		"16": "Logo.png",
+		"48": "Logo.png",
+		"128": "Logo.png"
+	},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
